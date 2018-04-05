@@ -1,7 +1,7 @@
-function repeat_String_NumTimes(string, n) {
+function repeat_String_NumTimes(n, string) {
   if (n > 0)
     return string.repeat(n);
   else
     return "";
 }
-repeat_String_NumTimes("pitu", 2);
+repeat_String_NumTimes(2, "pitu");
