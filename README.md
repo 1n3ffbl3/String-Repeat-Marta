@@ -8,16 +8,23 @@
 > 6. Publish and include this repo in your Codewar Gallery
 
 
-# [<challenge name>](https://www.codewars.com/kata/<challenge name>)
+# [String Reverser](https://www.codewars.com/kata/string-repeat/train/javascript>)
 
 Explain the challenge as completely as you can.
 
-<function name>: Function
-* Args: (how many args does this function take?)
+String_Repeat: Function
+* Args: 2
+ 1. Number: used to determine how many  duplicates to make
+ 2. String: the thing that's duplicated
   * (List each arg, it's type, and it's purpose)
-* Return: (what type does this function return?)
-  * (Describe the return value)
-* Behavior: (What does this function do?)
+* Return: String
+ * The argument string concatinated to itself "String" many times
+ * Behavior: The function takes in a number and a string, it copies the string x number  of times where x is the first argument to the function. It will return those copies stuck together in a single string.
+ 
+ var result = String_Repeat ()
+ console.log(result)
+ 
+
 
 
 ### Index
@@ -73,7 +80,11 @@ Keeping track of the language features you use will enable you separate the prob
 ---
 ## Uses
 
-List some applications or use cases for your solution.  Try for 3-5.
+* anti-publishing
+* informative error logging
+* virtual measuring tape
+* dynamically generating html
+ * ie.portfolio project boxes
 
 
 [TOP](#index)
