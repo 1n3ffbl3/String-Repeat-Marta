@@ -49,6 +49,124 @@ Stick with it!  It's best to learn how to analyze your thinking while the proble
 
 [TOP](#index)
 
+
+0. Codewars challenge
+    ```
+    Complete the solution so that it repeats the string.
+    ```
+1. Phrased as a function  
+    ```
+    Write a function called repeatStr which repeats the given string string exactly n times.
+    ```
+2. Define arguments and return value   
+    ```
+    Write a function that takes in a string and duplicates the string n times. 
+    ```
+3. Convert that sentence into high-high level pseudocode.
+    ```
+    solution(string)
+        repeat the string
+        return number of repeat string n times
+    End solution
+    ```
+4. Declare return value, isolate the challenging bit.
+    ```
+    solution(string)
+        reversed_string <- ""
+        reverse the string
+        return reversed_string
+    End solution   
+    ```
+5. Begin exploring the challenging bit.
+    ```
+    solution(string)
+       repeatStr <- ""
+        available options:
+            - for or while loops
+            - if statements
+            + string methods
+        return reversed_string
+    End solution   
+    ```
+6. Continue exploring the challenging bit.
+    ```
+    solution(string)
+        repeatStr<- ""
+        available options: String methods
+            - String.length
+            - String.indexOf
+            - String.search
+            + String.split
+            - String.substring
+            + String.slice
+            + String.replace
+        return repeatStr
+    End solution   
+    ```
+7. Continue exploring the challenging bit.
+    ```
+    solution(string)
+        repeatStr <- ""
+        two possible strategies:
+            +
+            -
+        return repeatStr
+    End solution   
+    ```
+8. Continue exploring the challenging bit.
+    ```
+    solution(string)
+        reversed_string <- ""
+        convert to array and back to string
+            String.split
+            Array.reverse
+            convert array back to string
+                - read out and concatinate each element in a loop
+                + Array.join
+        return reversed_string
+    End solution   
+    ```
+9. Decided on a strategy.
+    ```
+    solution(string)
+        reversed_string <- ""
+        convert to array and back to string
+            String.split
+            Array.reverse
+            Array.join
+        return reversed_string
+    End solution   
+    ```
+10. Refactoring pseudocode closer to real code
+    ```
+    solution(string)
+        reversed_string <- ""
+        temp_array = [];
+        temp_array <- string.split("")
+        temp_array <- temp_array.reverse()
+        reversed_string <- temp_array.join("")
+        return reversed_string
+    End solution   
+    ```
+11. Convert pseudocode to real code.
+    ```js
+    function solution(string) {
+        let reversed_string = "";
+        let temp_array = [];
+        
+        temp_array = string.split("");
+        temp_array = temp_array.reverse();
+        reversed_string = temp_array.join("");
+        
+        return reversed_string;
+    };  
+    ```    
+    
+[TOP](#index)
+
+---
+
+
 ---
 
 ## Solution Explanation
