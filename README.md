@@ -198,27 +198,27 @@ Keeping track of the language features you use will enable you separate the prob
 ## Learning Journal
 
 Things I learned studying this problem:
-* 
+* .repeat()method
 *
 *
 *
 
 New vocabulary:
-* 
+* concatinate
 * 
 *
 *
 
 Things I struggled with:
-* 
+* solution Process
 * 
 * 
 * 
 
 My study goals and stragegies:
-* 
-* 
-* 
+* Improve solution Process  
+* Work faster  
+* Work more effectvive  
 *
 
 
