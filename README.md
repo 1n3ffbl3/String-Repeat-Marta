@@ -52,99 +52,110 @@ Stick with it!  It's best to learn how to analyze your thinking while the proble
 
 0. Codewars challenge
     ```
-    Complete the solution so that it repeats the string.
+    Goal of the challenge is to design a solution to multiply text N times.
     ```
 1. Phrased as a function  
     ```
-    Write a function called repeat_String_NumTimes which repeats the given string  exactly n times.
+    Function repeatStringNTimes should take two arguments (times, text) and return text multipled N times. 
     ```
 2. Define arguments and return value   
     ```
-    Write a function that takes in a string and duplicates the string n times. 
+    ${times} - number, which indicates how many times text should be multiplied
+    ${text} - our string, which will be multipled
+    ${return value} - ${text} multiplied N ${times}
     ```
 3. Convert that sentence into high-high level pseudocode.
     ```
-    solution(string)
-        repeat the string
-        return repeat and concatinated string n times
+    Begin repeatStringNTimes(times, string)
+        for times
+          repeat the string and concatenate
+        return concatenated string
     End solution
     ```
 4. Declare return value, isolate the challenging bit.
     ```
-    solution(string)
-        repeat_String_NumTimes <- ""
-        repeat the string
-        return repeat_String_NumTimes
+    repeatStringNTimes(times, string)
+        result <- ""
+        for times
+          concatenate current result with next repetion of string
+        return result
     End solution   
     ```
 5. Begin exploring the challenging bit.
     ```
-    solution(string)
-        repeat_String_NumTimes<- ""
+    repeatStringNTimes(times, string)
+        result <- ""
         available options:
             - for or while loops ?
             - if statements ? 
             + string methods ?
-        return reversed_string
+        return result
     End solution   
     ```
 6. Continue exploring the challenging bit.
     ```
-    solution(string)
-        repeat_String_NumTimes<- ""
+    repeatStringNTimes(times, string)
+        result <- ""
         available options: String methods
             - String.length
             - String.indexOf
             - String.search
-            + String.split
+            - String.split
             - String.substring
-            + String.slice
-            + String.replace
-        return repeatStr
+            - String.slice
+            - String.replace
+            + String.repeat
+        return result
     End solution   
     ```
 7. Continue exploring the challenging bit.
     ```
-    solution(string)
-        repeat_String_NumTimes<- ""
+    repeatStringNTimes(times, string)
+        result <- ""
         two possible strategies:
-            +
-            -
-        return repeatStr
+            + String.repeat
+            - for loop / while loop
+        return result
     End solution   
     ```
 8. Continue exploring the challenging bit.
     ```
-    solution(string)
-        repeat_String_NumTimes<- ""
-        convert to array and back to string
-           ...      
-        return  repeat_String_NumTimes
+    repeatStringNTimes(times, string)
+        if times < 0 => handle invalid case i.e.:
+          + Console.log - display information about incorrect input
+          + Exception - throw an exception from method
+          + Console.log + return undefined OR Console.log and return string
+        result <- ""
+        for i range 0..times
+         result = String.concatenate(result, string)
+        OR 
+        result = String.repeat(times, string)
+        return  result
     End solution   
     ```
 9. Decided on a strategy.
     ```
-    solution(string)
-        repeat_String_NumTimes<- ""
-        convert to array and back to string
-            ...
-        return repeat_String_NumTimes
+    repeatStringNTimes(times, string)
+        if times < 0 => throw exception
+        result <- ""
+        result = String.repeat(times, string)
+        return result
     End solution   
     ```
 10. Refactoring pseudocode closer to real code
     ```
-    solution(string)
-        repeat_String_NumTimes <- ""
-        ...
-        return repeat_String_NumTimes
+    repeatStringNTimes(times, string)
+        if (times < 0) throw "Times must be positive number"
+        result = "";
+        result = String.repeat(times, string);
+        return result
     End solution   
     ```
 11. Convert pseudocode to real code.
     ```js
-    function repeat_String_NumTimes(n, "string") {
-        ...
-        
-        return repeat_String_NumTimes;
+    function repeat_String_NumTimes(times, text) {
+        if (times < 0) throw "{times} argument must be positive number";
+        return text.repeat(times);
     };  
     ```    
     
@@ -198,27 +209,28 @@ Keeping track of the language features you use will enable you separate the prob
 ## Learning Journal
 
 Things I learned studying this problem:
-* .repeat()method
-*
-*
-*
+* str.repeat() method
+* exception throwing
+* pseudocode 
+* abstract approach of problem
 
 New vocabulary:
-* concatinate
-* 
-*
+* concatenate
+* exception
+* pseudocode
 *
 
 Things I struggled with:
-* solution Process
+* Solution Design Process
 * 
 * 
 * 
 
 My study goals and stragegies:
-* Improve solution Process  
-* Work faster  
-* Work more effectvive  
+* Improve solution design process
+* Learn how to implement solution from solution design process 
+* Work smarter not faster  
+* Be more effectvive  
 *
 
 
