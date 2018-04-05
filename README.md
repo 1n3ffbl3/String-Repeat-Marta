@@ -56,7 +56,7 @@ Stick with it!  It's best to learn how to analyze your thinking while the proble
     ```
 1. Phrased as a function  
     ```
-    Write a function called repeatStr which repeats the given string string exactly n times.
+    Write a function called repeat_String_NumTimes which repeats the given string  exactly n times.
     ```
 2. Define arguments and return value   
     ```
@@ -66,32 +66,32 @@ Stick with it!  It's best to learn how to analyze your thinking while the proble
     ```
     solution(string)
         repeat the string
-        return number of repeat string n times
+        return repeat and concatinated string n times
     End solution
     ```
 4. Declare return value, isolate the challenging bit.
     ```
     solution(string)
-        reversed_string <- ""
-        reverse the string
-        return reversed_string
+        repeat_String_NumTimes <- ""
+        repeat the string
+        return repeat_String_NumTimes
     End solution   
     ```
 5. Begin exploring the challenging bit.
     ```
     solution(string)
-       repeatStr <- ""
+        repeat_String_NumTimes<- ""
         available options:
-            - for or while loops
-            - if statements
-            + string methods
+            - for or while loops ?
+            - if statements ? 
+            + string methods ?
         return reversed_string
     End solution   
     ```
 6. Continue exploring the challenging bit.
     ```
     solution(string)
-        repeatStr<- ""
+        repeat_String_NumTimes<- ""
         available options: String methods
             - String.length
             - String.indexOf
@@ -106,7 +106,7 @@ Stick with it!  It's best to learn how to analyze your thinking while the proble
 7. Continue exploring the challenging bit.
     ```
     solution(string)
-        repeatStr <- ""
+        repeat_String_NumTimes<- ""
         two possible strategies:
             +
             -
@@ -116,49 +116,35 @@ Stick with it!  It's best to learn how to analyze your thinking while the proble
 8. Continue exploring the challenging bit.
     ```
     solution(string)
-        reversed_string <- ""
+        repeat_String_NumTimes<- ""
         convert to array and back to string
-            String.split
-            Array.reverse
-            convert array back to string
-                - read out and concatinate each element in a loop
-                + Array.join
-        return reversed_string
+           ...      
+        return  repeat_String_NumTimes
     End solution   
     ```
 9. Decided on a strategy.
     ```
     solution(string)
-        reversed_string <- ""
+        repeat_String_NumTimes<- ""
         convert to array and back to string
-            String.split
-            Array.reverse
-            Array.join
-        return reversed_string
+            ...
+        return repeat_String_NumTimes
     End solution   
     ```
 10. Refactoring pseudocode closer to real code
     ```
     solution(string)
-        reversed_string <- ""
-        temp_array = [];
-        temp_array <- string.split("")
-        temp_array <- temp_array.reverse()
-        reversed_string <- temp_array.join("")
-        return reversed_string
+        repeat_String_NumTimes <- ""
+        ...
+        return repeat_String_NumTimes
     End solution   
     ```
 11. Convert pseudocode to real code.
     ```js
-    function solution(string) {
-        let reversed_string = "";
-        let temp_array = [];
+    function repeat_String_NumTimes(n, "string") {
+        ...
         
-        temp_array = string.split("");
-        temp_array = temp_array.reverse();
-        reversed_string = temp_array.join("");
-        
-        return reversed_string;
+        return repeat_String_NumTimes;
     };  
     ```    
     
