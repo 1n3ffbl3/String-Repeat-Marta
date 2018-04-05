@@ -1,20 +1,20 @@
 
 tests({
 
-  'eert': function() {
-    eq("tree", solution("eert"));
+  '4 Es': function() {
+    eq("EEEE", solution(4, "E"));
   },
-  'car': function() {
-    eq("rac", solution("car"));
+  '8 cars': function() {
+    eq("carcarcarcarcarcarcarcar", solution(8,"car"));
   },
-  'pencil': function() {
-    eq("licnep", solution("pencil"));
+  '2 pencils': function() {
+    eq("pencilpencil", solution(2,"pencil"));
   },
-  '8873024': function() {
-    eq("4203788", solution("8873024"));
+  '1 home ': function() {
+    eq("home", solution(1,"home"));
   },
-  '##&][&##': function() {
-    eq("##&][&##", solution("##&][&##"));
+  "6 elo's": function() {
+    eq("eloeloeloeloeloelo", solution(6,"elo"));
   }
 
 });
