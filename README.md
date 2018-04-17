@@ -18,7 +18,7 @@ String_Repeat: Function
  2. String: the thing that's duplicated
   * (List each arg, it's type, and it's purpose)
 * Return: String
- * The argument string concatinated to itself "String" many times
+     * The argument string concatinated to itself "String" many times
  * Behavior: The function takes in a number and a string, it copies the string x number  of times where x is the first argument to the function. It will return those copies stuck together in a single string.
  
  var result = String_Repeat ()
